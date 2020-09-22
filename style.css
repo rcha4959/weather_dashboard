@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+}
+
+.card {
+    color: green;
+    background-color: greenyellow;
+}
