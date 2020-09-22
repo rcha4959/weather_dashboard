@@ -8,7 +8,7 @@ function retrieve(e) {
     var city = input.val();
     console.log(city)
     var apiKey = "34920371ed8ec37190ff37babcba6eb1"
-    var queryURl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + apiKey;
+    var queryURl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + apiKey;
 
     e.preventDefault();
 
