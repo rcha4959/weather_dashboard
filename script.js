@@ -26,6 +26,8 @@ function retrieve(e) {
         $(humid).text("Humidity(%): " + data.main.humidity)
         $(windSpeed).text("Wind Speed(m/s): " + data.wind.speed)
 
+        console.log(data.weather[0].icon);
+
     })
 
 
