@@ -32,6 +32,8 @@ function retrieve(e) {
         $("#icon").append(img);
 
         var queryURl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&cnt=5&units=metric&appid=" + apiKey;
+
+
         $.ajax({
             url: queryURl,
             Method: "GET"
@@ -39,8 +41,8 @@ function retrieve(e) {
             console.log(data.list);
 
             for (var i = 0; i < 5; i++) {
-                var humidityList = (data.list[i].main.humidity)
-                var tempList = (data.list[i].main.temp)
+                var humidityList = (data.list[i].main.humidity + "%")
+                var tempList = (data.list[i].main.temp + "c")
                 weatherIconList = (data.list[i].weather[0].icon);
                 iconURlList = "http://openweathermap.org/img/wn/" + weatherIconList + "@2x.png";
 
