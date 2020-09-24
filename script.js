@@ -26,7 +26,12 @@ function retrieve(e) {
         $(humid).text("Humidity(%): " + data.main.humidity)
         $(windSpeed).text("Wind Speed(m/s): " + data.wind.speed)
 
+        weatherIcon = data.weather[0].icon;
         console.log(data.weather[0].icon);
+        iconURl = "http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png";
+        var img = $("<img>")
+        img.attr("src", iconURl)
+        $("#icon").append(img);
 
     })
 
